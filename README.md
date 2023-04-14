@@ -2,12 +2,13 @@
 AI-Notes is A collection of notes on Hansimov's following AI techniques.
 
 # Trending
-* Papers With Code
-  * https://paperswithcode.com
 * GitHub Trending
   * https://github.com/trending
 * arxiv-sanity
   * https://arxiv-sanity-lite.com
+* Papers With Code
+  * https://paperswithcode.com
+
 * Deep Learning Monitor
   * https://deeplearn.org
 * arXiv
