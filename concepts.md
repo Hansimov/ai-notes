@@ -16,4 +16,4 @@
 
 * [1503.02531] Distilling the Knowledge in a Neural Network
   * https://arxiv.org/abs/1503.02531
-  * 【经典】（2015年，13k引用）使集成模型中的知识压缩到单一模型成为可能
+  * 【经典】(2015, ~13k) 使集成模型中的知识压缩到单一模型成为可能

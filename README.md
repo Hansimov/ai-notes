@@ -14,8 +14,34 @@ Articles:
 Papers:
 * 【综述】：综述性论文
 * 【经典】：经典的和开创性的论文
+* 【ToDu】：待读
 
 # Domains
 * [Concepts](./concepts.md)
 * [Style Transfer](./style-transfer.md)
 * [Image Generation](./image-generation.md)
+
+# Trending
+* Papers With Code
+  * https://paperswithcode.com/
+* GitHub Trending
+  * https://github.com/trending
+* arxiv-sanity
+  * https://arxiv-sanity-lite.com/
+
+* arXiv: Computer Science
+  * https://arxiv.org/archive/cs
+    * AI: https://arxiv.org/list/cs.AI/pastweek?skip=0&show=100
+    * LG: https://arxiv.org/list/cs.LG/pastweek?skip=0&show=100
+    * CV: https://arxiv.org/list/cs.CV/pastweek?skip=0&show=100
+    * GR: https://arxiv.org/list/cs.GR/pastweek?skip=0&show=100
+
+* Reddit: Machine Learning & Deep Learning
+  * https://www.reddit.com/r/MachineLearning/
+  * https://www.reddit.com/r/deeplearning
+* Deep Learning Monitor
+  * https://deeplearn.org/
+
+# Tools
+* arXiv Vanity: Read academic papers from arXiv as web pages
+  * https://www.arxiv-vanity.com/
