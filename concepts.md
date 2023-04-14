@@ -1,4 +1,3 @@
-
 ### 蒸馏（Distillation）
 * 从入门到放弃：深度学习中的模型蒸馏技术 - 知乎
   * https://zhuanlan.zhihu.com/p/93287223
@@ -13,7 +12,8 @@
 
 * Knowledge Distillation: Principles, Algorithms, Applications - neptune.ai
   * https://neptune.ai/blog/knowledge-distillation
-  > 【科普】知识蒸馏的概念解释、原理、图/文/音中的应用
+  > 【扫盲】知识蒸馏的概念解释、原理、算法（对抗性+多教师+交叉）、应用（CV+NLP+Speech）
 
 * [1503.02531] Distilling the Knowledge in a Neural Network
   * https://arxiv.org/abs/1503.02531
+  * 【经典】（2015年，13k引用）使集成模型中的知识压缩到单一模型成为可能
