@@ -1,5 +1,9 @@
 # GPT
-This part covers resources for GPT (Generative Pretrained Transformer), especially in LLM
+This part covers resources for GPT (Generative Pretrained Transformer), especially in LLM.
+
+Currently I'm intrested in two topics:
+* Tricks and prompts for commonly using ChatGPT
+* Fine-tune or train personal or domain-specific GPT engines
 
 ## Embedding
 * Embeddings - OpenAI API
@@ -15,3 +19,14 @@ This part covers resources for GPT (Generative Pretrained Transformer), especial
 * jerryjliu/llama_index: LlamaIndex (GPT Index) is a project that provides a central interface to connect your LLM's with external data.
   * https://github.com/jerryjliu/llama_index/tree/main
   * https://gpt-index.readthedocs.io/en/latest/index.html
+
+* How to Train an AI Chatbot With Custom Knowledge Base Using ChatGPT API | Beebom
+  * https://beebom.com/how-train-ai-chatbot-custom-knowledge-base-chatgpt-api/
+  >【教程】提供了简明的流程和思路，ChatGPP + LlamaIndex + LangChain + PyPDF2 + Gradio
+  
+* Unlock the Power of GPT-3: Your Complete Guide to Fine-Tuning with OpenAI, Featuring Real-World Examples | Mastering GPT-3 | Medium
+  * https://medium.com/@kapildevkhatik2/mastering-gpt-3-a-comprehensive-guide-to-fine-tuning-with-openai-complete-with-examples-e28515c22d92
+
+* Fine-tuning & Customizing GPT-3: Approaches, Techniques, & Use Cases
+  * https://www.cronj.com/blog/fine-tuning-customizing-gpt-3-approaches-techniques-use-cases/
+  >【罗列】笼统地列举了微调和定制 GPT-3 的方法
