@@ -20,11 +20,11 @@ AI-Notes is A collection of notes on Hansimov's following AI techniques.
   * https://www.reddit.com/r/MachineLearning
   * https://www.reddit.com/r/deeplearning
 
-
 # Domains
-* [Concepts](./concepts.md)
+* [Concepts in AI](./concepts.md)
 * [Style Transfer](./style-transfer.md)
 * [Image Generation](./image-generation.md)
+* [GPT](./gpt.md)
 
 # Tools
 * arXiv Vanity: Read academic papers from arXiv as web pages
