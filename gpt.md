@@ -30,3 +30,11 @@ Currently I'm intrested in two topics:
 * Fine-tuning & Customizing GPT-3: Approaches, Techniques, & Use Cases
   * https://www.cronj.com/blog/fine-tuning-customizing-gpt-3-approaches-techniques-use-cases/
   >【罗列】笼统地列举了微调和定制 GPT-3 的方法
+  
+  
+# Mini and open-source GPTs
+* karpathy/minGPT: A minimal PyTorch re-implementation of the OpenAI GPT (Generative Pretrained Transformer) training
+  * https://github.com/karpathy/minGPT
+
+* karpathy/nanoGPT: The simplest, fastest repository for training/finetuning medium-sized GPTs.
+  * https://github.com/karpathy/nanoGPT
