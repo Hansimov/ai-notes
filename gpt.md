@@ -1,9 +1,15 @@
 # GPT
 This part covers resources for GPT (Generative Pretrained Transformer), especially in LLM.
 
-Currently I'm intrested in two topics:
+Currently I'm following two topics:
 * Tricks and prompts for commonly using ChatGPT
 * Fine-tune or train personal or domain-specific GPT engines
+
+## General
+* openai/openai-cookbook: Examples and guides for using the OpenAI API
+  * https://github.com/openai/openai-cookbook
+  * https://github.com/openai/openai-cookbook/tree/main/examples
+  >【必读】OpenAI官方出品的文档，质量很高，建议通读，各种示例代码值得一看
 
 ## Embedding
 * Embeddings - OpenAI API
