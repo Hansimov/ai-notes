@@ -32,6 +32,8 @@ Currently I'm following two topics:
 ## Chain of Thoughts
 * hwchase17/langchain: ⚡ Building applications with LLMs through composability ⚡
   * https://github.com/hwchase17/langchain
+* Welcome to LangChain — 🦜🔗 LangChain 0.0.146
+  * https://python.langchain.com/en/latest
 
 ## Embeddings
 * Embeddings - OpenAI API
@@ -39,6 +41,7 @@ Currently I'm following two topics:
 
 * jerryjliu/llama_index: LlamaIndex (GPT Index) is a project that provides a central interface to connect your LLM's with external data.
   * https://github.com/jerryjliu/llama_index/tree/main
+* LlamaIndex - Documentation
   * https://gpt-index.readthedocs.io/en/latest/index.html
 
 ## Fine-tune
