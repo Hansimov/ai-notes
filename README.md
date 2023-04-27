@@ -6,6 +6,10 @@ AI-Notes is A collection of notes on Hansimov's following AI techniques.
   * https://github.com/trending
 * arxiv-sanity
   * https://arxiv-sanity-lite.com
+
+* Daily Papers - LabML.ai
+  * https://papers.labml.ai/papers/daily/
+
 * Papers With Code
   * https://paperswithcode.com
 
@@ -20,15 +24,17 @@ AI-Notes is A collection of notes on Hansimov's following AI techniques.
   * https://www.reddit.com/r/MachineLearning
   * https://www.reddit.com/r/deeplearning
 
+# Tools
+* arXiv Vanity: Read academic papers from arXiv as web pages
+  * https://www.arxiv-vanity.com
+* Connected Papers | Find and explore academic papers
+  * https://www.connectedpapers.com/
+
 # Domains
 * [Concepts in AI](./concepts.md)
 * [Style Transfer](./style-transfer.md)
 * [Image Generation](./image-generation.md)
 * [GPT](./gpt.md)
-
-# Tools
-* arXiv Vanity: Read academic papers from arXiv as web pages
-  * https://www.arxiv-vanity.com
 
 # Terms
 Articles:
