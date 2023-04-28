@@ -6,13 +6,19 @@ AI-Notes is A collection of notes on Hansimov's following AI techniques.
   * https://github.com/trending
 * arxiv-sanity
   * https://arxiv-sanity-lite.com
-
+* Papers With Code
+  * https://paperswithcode.com/top-social
+  * https://paperswithcode.com
 * Daily Papers - LabML.ai
   * https://papers.labml.ai/papers/daily/
 
-* Papers With Code
-  * https://paperswithcode.com
+# Tools
+* arXiv Vanity: Read academic papers from arXiv as web pages
+  * https://www.arxiv-vanity.com
+* Connected Papers | Find and explore academic papers
+  * https://www.connectedpapers.com/
 
+# Trending - Less visited
 * Deep Learning Monitor
   * https://deeplearn.org
 * arXiv
@@ -24,11 +30,11 @@ AI-Notes is A collection of notes on Hansimov's following AI techniques.
   * https://www.reddit.com/r/MachineLearning
   * https://www.reddit.com/r/deeplearning
 
-# Tools
-* arXiv Vanity: Read academic papers from arXiv as web pages
-  * https://www.arxiv-vanity.com
-* Connected Papers | Find and explore academic papers
-  * https://www.connectedpapers.com/
+# Tools - Installed Once
+* arXiv Vanity - Chrome Extension - Add an arXiv Vanity link to arXiv abstract pages
+  * https://chrome.google.com/webstore/detail/arxiv-vanity/jfnlkegibnoaagfdabjkchhocdhnoofk
+* arXiv2git - Chrome Extension - Looks for github links from arXiv pages
+  * https://chrome.google.com/webstore/detail/arxiv2git/gfhbipbocjiapodeflmklgnnnndplnpp/related
 
 # Domains
 * [Concepts in AI](./concepts.md)
