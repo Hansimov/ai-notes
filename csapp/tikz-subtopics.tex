@@ -1,0 +1,23 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+
+\begin{document}
+\begin{tikzpicture}[
+  grow=right,
+  every node/.style = {align=center, anchor=west},
+  sibling distance=5em,
+  level distance=8em]
+  \node {GPT-4 Help for\\Python Programmers}
+    child { node {Code examples\\and solutions} }
+    child { node {Debugging help} }
+    child { node {Code review} }
+    child { node {Learning resource\\recommendations} }
+    child { node {Knowledge base\\queries} }
+    child { node {Technology\\roadmap planning} }
+    child { node {Project suggestions} }
+    child { node {Tool and library\\recommendations} }
+    child { node {Code documentation\\and comments} }
+    child { node {Code standard\\suggestions} };
+\end{tikzpicture}
+\end{document}

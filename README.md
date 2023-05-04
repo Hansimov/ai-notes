@@ -11,6 +11,9 @@ AI-Notes is A collection of notes on Hansimov's following AI techniques.
   * https://paperswithcode.com
 * Daily Papers - LabML.ai
   * https://papers.labml.ai/papers/daily/
+* BriefGPT - AI 论文速递
+  * https://briefgpt.xyz/
+
 
 # Tools
 * arXiv Vanity: Read academic papers from arXiv as web pages
