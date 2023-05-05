@@ -1,5 +1,8 @@
 # latex files
 *.aux
+*.bbl
+*.bcf
+*.blg
 *.fdb_latexmk
 *.fls
 *.log
@@ -8,3 +11,4 @@
 *.out
 *.snm
 *.toc
+*.xml

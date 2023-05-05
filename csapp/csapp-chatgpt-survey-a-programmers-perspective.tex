@@ -7,6 +7,14 @@
 % Packages
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage[backend=biber, sorting=none, defernumbers=true]{biblatex}
+\addbibresource{refs.bib}
+\DeclareFieldFormat*{title}{#1\nopunct}
+\DeclareFieldFormat*{url}{\newline\url{#1}\nopunct}
+\DeclareFieldFormat{labelnumberwidth}{#1\adddot}
+\setlength{\biblabelsep}{5pt}
+\renewcommand*{\bibfont}{\footnotesize}
+\usepackage{ragged2e}
 
 % Title and author information
 \title{ChatGPT Survey}
@@ -62,7 +70,7 @@
     \item Roadmap
     \item Project plan
     \item Tools, utils, libraries and softwares
-    \item Code 
+    \item Code \cite{coding-prompts}
   \end{itemize}
 \end{frame}
 
@@ -77,14 +85,10 @@
 % 行动指南(instructions)、事实依据(facts)、思想纲领(policies)
 
 \section{References}
-\begin{frame}{References}
-  Chat GPT For Programming: 100+ Coding Prompts For Chat GPT
-  https://www.greataiprompts.com/chat-gpt/best-coding-prompts-for-chat-gpt
-  Chat-GPT Cheat Sheet V2 : coolguides
-  https://www.reddit.com/r/coolguides/comments/12ouw8o/chatgpt_cheat_sheet_v2/
-  SPQA: The AI-based Architecture That'll Replace Most Existing Software - Daniel Miessler
-  https://danielmiessler.com/blog/spqa-ai-architecture-replace-existing-software/
-
+\begin{frame}[t,allowframebreaks]{References}
+  \nocite{*}
+  \RaggedRight
+  \printbibliography
 \end{frame}
 
 
