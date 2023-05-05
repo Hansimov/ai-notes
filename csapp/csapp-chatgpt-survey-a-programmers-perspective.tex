@@ -3,18 +3,24 @@
 % Theme and color scheme
 \usetheme{Madrid}
 \usecolortheme{whale}
+\usepackage{xcolor}
+\usepackage{etoolbox}
 
 % Packages
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage[backend=biber, sorting=none, defernumbers=true]{biblatex}
 \addbibresource{refs.bib}
-\DeclareFieldFormat*{title}{#1\nopunct}
+\DeclareFieldFormat*{title}{#1}
 \DeclareFieldFormat*{url}{\newline\url{#1}\nopunct}
 \DeclareFieldFormat{labelnumberwidth}{#1\adddot}
 \setlength{\biblabelsep}{5pt}
-\renewcommand*{\bibfont}{\footnotesize}
+\renewcommand*{\bibfont}{\scriptsize}
 \usepackage{ragged2e}
+
+\newcommand{\biburl}[2][]{%
+  \newline - \ifstrempty{#1}{\url{#2}\nopunct}{\textcolor{cyan}{#1:}} \url{#2}\nopunct
+}
 
 % Title and author information
 \title{ChatGPT Survey}
