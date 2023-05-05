@@ -9,17 +9,17 @@
 % Packages
 \usepackage{graphicx}
 \usepackage{hyperref}
-\usepackage[backend=biber, sorting=none, defernumbers=true]{biblatex}
+\usepackage[backend=biber, sorting=none]{biblatex}
 \addbibresource{refs.bib}
 \DeclareFieldFormat*{title}{#1}
 \DeclareFieldFormat*{url}{\newline\url{#1}\nopunct}
 \DeclareFieldFormat{labelnumberwidth}{#1\adddot}
 \setlength{\biblabelsep}{5pt}
-\renewcommand*{\bibfont}{\scriptsize}
+\renewcommand*{\bibfont}{\tiny}
 \usepackage{ragged2e}
 
 \newcommand{\biburl}[2][]{%
-  \newline - \ifstrempty{#1}{\url{#2}\nopunct}{\textcolor{cyan}{#1:}} \url{#2}\nopunct
+  \newline - \ifstrempty{#1}{}{\textcolor{cyan}{#1: }}\url{#2}\nopunct
 }
 
 % Title and author information
@@ -65,6 +65,10 @@
   \item Deploy and maintain
   \item Document
 \end{enumerate}
+\end{frame}
+
+\begin{frame}{TikZ Test}
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{tikz-code-lifecycle.pdf}
 \end{frame}
 
 \begin{frame}{Outline}
