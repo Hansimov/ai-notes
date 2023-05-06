@@ -1,31 +1,24 @@
-\documentclass[tikz,border=3.14mm]{standalone}
-\usetikzlibrary{shapes,arrows.meta,positioning}
-\tikzset{
-block/.style={rectangle, draw, text centered, rounded corners},
-line/.style={draw, -{Latex[length=2mm]}}
-}
+\documentclass[tikz,border=10pt]{standalone}
+\usetikzlibrary{mindmap}
+
 \begin{document}
-\begin{tikzpicture}[node distance = 1.5cm, auto]
-    % Place nodes
-    \node [block] (planning) {Planning};
-    \node [block, right=2cm of planning] (analysis) {Analysis};
-    \node [block, right=2cm of analysis] (design) {Design};
-    \node [block, right=2cm of design] (implementation) {Implementation};
-    \node [block, below of=implementation] (writecode) {Write Code};
-    \node [block, below of=writecode] (debug) {Debug Errors};
-    \node [block, below of=debug] (specialize) {Specialize in Programming Languages};
-    \node [block, right=2cm of implementation] (testing) {Testing};
-    \node [block, right=2cm of testing] (deployment) {Deployment};
-    \node [block, right=2cm of deployment] (maintenance) {Maintenance};
-    % Draw edges
-    \path [line] (planning) -- (analysis);
-    \path [line] (analysis) -- (design);
-    \path [line] (design) -- (implementation);
-    \path [line] (implementation) -- (testing);
-    \path [line] (testing) -- (deployment);
-    \path [line] (deployment) -- (maintenance);
-    \path [line] (implementation) -- (writecode);
-    \path [line] (writecode) -- (debug);
-    \path [line] (debug) -- (specialize);
+\begin{tikzpicture}[
+    mindmap,
+    concept/.append style={text width=2.5cm, align=center},
+    font=\sffamily,
+    every edge/.append style={decorate}
+  ]
+  \node [concept, concept color=red!50] (root) {Coding Lifecycle}
+    child[grow=0] {node[concept, concept color=blue!50] (ra) {Requirement Analysis}}
+    child[grow=72] {node[concept, concept color=green!50] (d) {Design}}
+    child[grow=144] {node[concept, concept color=orange!50] (i) {Implementation}}
+    child[grow=216] {node[concept, concept color=purple!50] (ti) {Testing and Integration}}
+    child[grow=288] {node[concept, concept color=brown!50] (m) {Maintenance}};
+  \path (root) to[circle connection bar switch color=from (red) to (blue)] (ra);
+  \path (ra) to[circle connection bar switch color=from (blue) to (green)] (d);
+  \path (d) to[circle connection bar switch color=from (green) to (orange)] (i);
+  \path (i) to[circle connection bar switch color=from (orange) to (purple)] (ti);
+  \path (ti) to[circle connection bar switch color=from (purple) to (brown)] (m);
+  \path (m) to[circle connection bar switch color=from (brown) to (red)] (root);
 \end{tikzpicture}
 \end{document}
