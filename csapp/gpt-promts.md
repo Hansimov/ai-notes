@@ -16,3 +16,7 @@ Please Do following instructions step by step:
 Use mindmap library in tikz to refactor you tikz codes
 
 Please re-improve the paths connections between circles: Here is the grammer: `circle connection bar switch color=from (⟨first color⟩) to (⟨second color⟩)`, And here is an example: ` \path (n1) to[circle connection bar switch color=from (red) to (blue)] (n2);`
+
+Use Tree Edges to re-improve your codes, here is an example: ``` child[concept color=blue] { node[concept] {applied} [clockwise from=-30] child { node[concept] {databases} } child { node[concept] {WWW} } } ```
+
+1st, You should remove all codes similar to following: ```\path (root) to[circle connection bar switch color=from (red) to (blue)] (ra);```, because it no longer needed. 2nd, you should make subchildren has same color to its parent
