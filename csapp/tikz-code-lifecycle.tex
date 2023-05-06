@@ -1,5 +1,5 @@
 \documentclass[tikz,border=3.14mm]{standalone}
-\usetikzlibrary{shapes,arrows.meta}
+\usetikzlibrary{shapes,arrows.meta,positioning}
 \tikzset{
 block/.style={rectangle, draw, text centered, rounded corners},
 line/.style={draw, -{Latex[length=2mm]}}
@@ -8,15 +8,15 @@ line/.style={draw, -{Latex[length=2mm]}}
 \begin{tikzpicture}[node distance = 1.5cm, auto]
     % Place nodes
     \node [block] (planning) {Planning};
-    \node [block, below of=planning] (analysis) {Analysis};
-    \node [block, below of=analysis] (design) {Design};
-    \node [block, below of=design] (implementation) {Implementation};
-    \node [block, right of=implementation, xshift=3cm] (writecode) {Write Code};
+    \node [block, right=2cm of planning] (analysis) {Analysis};
+    \node [block, right=2cm of analysis] (design) {Design};
+    \node [block, right=2cm of design] (implementation) {Implementation};
+    \node [block, below of=implementation] (writecode) {Write Code};
     \node [block, below of=writecode] (debug) {Debug Errors};
     \node [block, below of=debug] (specialize) {Specialize in Programming Languages};
-    \node [block, below of=implementation] (testing) {Testing};
-    \node [block, below of=testing] (deployment) {Deployment};
-    \node [block, below of=deployment] (maintenance) {Maintenance};
+    \node [block, right=2cm of implementation] (testing) {Testing};
+    \node [block, right=2cm of testing] (deployment) {Deployment};
+    \node [block, right=2cm of deployment] (maintenance) {Maintenance};
     % Draw edges
     \path [line] (planning) -- (analysis);
     \path [line] (analysis) -- (design);
