@@ -18,7 +18,7 @@
 \newcommand{\biburl}[2][]{%
 \newline - \ifstrempty{#1}{}{\textcolor{cyan}{#1: }}\url{#2}\nopunct
 }
-
+  
 \usepackage{datetime}
 \yyyymmdddate % 2023/05/08
 
@@ -57,12 +57,22 @@
 % Lesson 1
 \date{2023/05/09}
 \lesson{Prompt Engineering: Principles, Techniques, and Tools}
-% 行动指南(instructions)、事实依据(facts)、思想纲领(policies)
+
+
+\subsection{SPQA Architecture}
+\begin{frame}{SPQA Architecture}
+  \centering
+  \includegraphics[width=\linewidth,height=0.8\textheight,keepaspectratio]{./images/spqa-3-architecture-model-based.png}
+\end{frame}
+
+\begin{frame}{Circuit-Based vs Understanding-Based}
+  \centering
+  \includegraphics[width=\linewidth,height=0.8\textheight,keepaspectratio]{./images/spqa-1-circuit-vs-understanding.png}
+\end{frame}
 
 \subsection{Prompt Workflows}
-  % Workflow: Role -> Instruction -> Examples -> Context -> Question
-  % autogpt: Task -> Reason -> Plan -> Criticize -> Act -> Iterate
 \begin{frame}{Prompt Workflows}
+  \centering
   \begin{minipage}[c][\textheight][c]{0.38\linewidth}
     \vspace{-3\topskip}
   \includegraphics[width=\linewidth,keepaspectratio]{./images/chatgpt-cheatsheet.png}
@@ -79,6 +89,8 @@
   \end{minipage}
 \end{frame}
 
+
+
 \subsection{Prompt Principles}
 \begin{frame}{Prompt Principles}
 % More details and examples
@@ -91,7 +103,9 @@
   % self-check
 % Top to Bottom
   % Divide and conquer
-  
+
+  \centering
+  \includegraphics[width=\linewidth,height=0.8\textheight,keepaspectratio]{./tikz-prompt-principles.pdf}
 
   % More details
   % Do One Thing And Do It Well (DOTADIW)
@@ -107,14 +121,13 @@
   % Ask for structured output
   % Instruct the model to check conditions
   % Use few-shot prompting.
-  
 
 \end{frame}
 
 \begin{frame}{Search Engine is Still Your Friend}
 \end{frame}
 
-\begin{frame}{Human Feedback is Still Important}
+\begin{frame}{Human Skills is Still Important}
 \end{frame}
 
 \subsection{Tools and Extensions}
