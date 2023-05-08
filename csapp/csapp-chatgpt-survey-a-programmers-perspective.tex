@@ -4,7 +4,6 @@
 \usecolortheme{whale}
 \usepackage{xcolor}
 \usepackage{etoolbox}
-
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage[backend=biber, sorting=none]{biblatex}
@@ -17,28 +16,33 @@
 \usepackage{ragged2e}
 
 \newcommand{\biburl}[2][]{%
-  \newline - \ifstrempty{#1}{}{\textcolor{cyan}{#1: }}\url{#2}\nopunct
+\newline - \ifstrempty{#1}{}{\textcolor{cyan}{#1: }}\url{#2}\nopunct
 }
+
+\usepackage{datetime}
+\yyyymmdddate % 2023/05/08
+
+\title{GPT Survey: A Programmer's Perspective}
+\author{Yu Zehan}
+\institute{Intel FLEX}
+\date{\today}
 
 \newcounter{lesson_cnt}
 \newcommand{\lesson}[1]{
   \stepcounter{lesson_cnt}
   \section{Lesson \arabic{lesson_cnt}: #1}
   \subtitle{Lesson \arabic{lesson_cnt}: #1}
+
+
   \begin{frame}
     \titlepage
   \end{frame}
-  
+
   \begin{frame}{Outline of Lesson \arabic{lesson_cnt}}
     % \tableofcontents[currentsection,hideothersubsections]
     \tableofcontents[sections={\arabic{lesson_cnt}}]
   \end{frame}
 }
-
-\title{GPT Survey: A Programmer's Perspective}
-\author{Yu Zehan}
-\institute{Intel FLEX}
-\date{\today}
 
 \begin{document}
 
@@ -51,6 +55,7 @@
 \end{frame}
 
 % Lesson 1
+\date{2023/05/09}
 \lesson{Prompt Engineering: Principles, Techniques, and Tools}
 % 行动指南(instructions)、事实依据(facts)、思想纲领(policies)
 
@@ -101,7 +106,12 @@
   
 \end{frame}
 
+\begin{frame}{Tools and Extensionsle}
+  
+\end{frame}
+
 % Lesson 2
+\date{2023/05/15}
 \lesson{Case Studies of Coding Tasks with GPT}
 \begin{frame}
   \titlepage
