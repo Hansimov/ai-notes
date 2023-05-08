@@ -24,8 +24,11 @@
 \newcounter{lessoncounter}
 
 % Define new command
-\newcommand{\lesson}[1]{\stepcounter{lessoncounter}\section{Lesson \arabic{lessoncounter}: #1}\subtitle{Lesson \arabic{lessoncounter}: #1}}
-
+\newcommand{\lesson}[1]{
+  \stepcounter{lessoncounter}
+  \section{Lesson \arabic{lessoncounter}: #1}
+  \subtitle{Lesson \arabic{lessoncounter}: #1}
+}
 
 \title{GPT Survey: A Programmer's Perspective}
 \author{Yu Zehan}
@@ -42,18 +45,16 @@
   \tableofcontents
 \end{frame}
 
-% \section{Lifecycle of Coding}
-% \begin{frame}{Lifecycle of Coding}
-%   \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{tikz-code-lifecycle.pdf}
-% \end{frame}
-
-
 % Lesson 1
 \lesson{Prompt Engineering: Principles, Techniques, and Extensions}
 % 行动指南(instructions)、事实依据(facts)、思想纲领(policies)
 
 \begin{frame}
   \titlepage
+\end{frame}
+
+\begin{frame}{Think Like LLM}
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{./images/chatgpt-cheatsheet.png}
 \end{frame}
 
 % Lesson 2
