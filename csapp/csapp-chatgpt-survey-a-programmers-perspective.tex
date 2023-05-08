@@ -20,14 +20,19 @@
   \newline - \ifstrempty{#1}{}{\textcolor{cyan}{#1: }}\url{#2}\nopunct
 }
 
-% Define new counter
-\newcounter{lessoncounter}
-
-% Define new command
+\newcounter{lesson_cnt}
 \newcommand{\lesson}[1]{
-  \stepcounter{lessoncounter}
-  \section{Lesson \arabic{lessoncounter}: #1}
-  \subtitle{Lesson \arabic{lessoncounter}: #1}
+  \stepcounter{lesson_cnt}
+  \section{Lesson \arabic{lesson_cnt}: #1}
+  \subtitle{Lesson \arabic{lesson_cnt}: #1}
+  \begin{frame}
+    \titlepage
+  \end{frame}
+  
+  \begin{frame}{Outline of Lesson \arabic{lesson_cnt}}
+    % \tableofcontents[currentsection,hideothersubsections]
+    \tableofcontents[sections={\arabic{lesson_cnt}}]
+  \end{frame}
 }
 
 \title{GPT Survey: A Programmer's Perspective}
@@ -42,20 +47,19 @@
 \end{frame}
 
 \begin{frame}{Outline}
-  \tableofcontents
+  \tableofcontents[hideallsubsections]
 \end{frame}
 
 % Lesson 1
 \lesson{Prompt Engineering: Principles, Techniques, and Tools}
 % 行动指南(instructions)、事实依据(facts)、思想纲领(policies)
 
-\begin{frame}
-  \titlepage
-\end{frame}
+\subsection{Prompt Workflows}
 
 \begin{frame}{Prompt Workflow}
 \end{frame}
 
+\subsection{Prompt Principles}
 \begin{frame}{Prompt Principles}
 % More details and examples
   % One-shot or Few shots
@@ -77,6 +81,7 @@
   % Search Engine is still powerful
 \end{frame}
 
+\subsection{Prompt Techniques}
 \begin{frame}{Prompt Techniques}
   % Use delimiters
   % Ask for structured output
@@ -89,6 +94,11 @@
 
 \begin{frame}{Think Like LLM}
   \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{./images/chatgpt-cheatsheet.png}
+\end{frame}
+
+\subsection{Tools and Extensions}
+\begin{frame}{Tools and Extensionsle}
+  
 \end{frame}
 
 % Lesson 2
