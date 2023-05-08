@@ -60,8 +60,23 @@
 % 行动指南(instructions)、事实依据(facts)、思想纲领(policies)
 
 \subsection{Prompt Workflows}
-
-\begin{frame}{Prompt Workflow}
+  % Workflow: Role -> Instruction -> Examples -> Context -> Question
+  % autogpt: Task -> Reason -> Plan -> Criticize -> Act -> Iterate
+\begin{frame}{Prompt Workflows}
+  \begin{minipage}[c][\textheight][c]{0.38\linewidth}
+    \vspace{-3\topskip}
+  \includegraphics[width=\linewidth,keepaspectratio]{./images/chatgpt-cheatsheet.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[c][\textheight][c]{0.18\linewidth}
+    \vspace{-3\topskip}
+  \includegraphics[width=\linewidth,keepaspectratio]{./tikz-prompt-workflow-autogpt.pdf}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[c][\textheight][c]{0.32\linewidth}
+    \vspace{-3\topskip}
+    \includegraphics[width=\linewidth,keepaspectratio]{./tikz-prompt-workflow-common.pdf}
+  \end{minipage}
 \end{frame}
 
 \subsection{Prompt Principles}
@@ -93,43 +108,38 @@
   % Instruct the model to check conditions
   % Use few-shot prompting.
   
-  % Workflow: Role -> Instruction -> Examples -> Context -> Question
-  % autogpt: Task -> Reason -> Plan -> Criticize -> Act -> Iterate
+
 \end{frame}
 
-\begin{frame}{Think Like LLM}
-  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{./images/chatgpt-cheatsheet.png}
+\begin{frame}{Search Engine is Still Your Friend}
+\end{frame}
+
+\begin{frame}{Human Feedback is Still Important}
 \end{frame}
 
 \subsection{Tools and Extensions}
-\begin{frame}{Tools and Extensionsle}
+\begin{frame}{GPT applications comparisons}
   
 \end{frame}
 
-\begin{frame}{Tools and Extensionsle}
+\begin{frame}{Tools and Extensions}
   
 \end{frame}
 
 % Lesson 2
 \date{2023/05/15}
-\lesson{Case Studies of Coding Tasks with GPT}
-\begin{frame}
-  \titlepage
-\end{frame}
-
-% Lesson 3
 \lesson{Integrate GPT in Whole Coding Lifecycle}
 \begin{frame}
 \titlepage
 \end{frame}
 
-% Lesson 4
+% Lesson 3
 \lesson{Cutting-Edge GPT Projects and Showcases}
 \begin{frame}
   \titlepage
 \end{frame}
 
-% Lesson 5
+% Lesson 4
 \lesson{Customize GPT for More Power}
 \begin{frame}
 \titlepage
