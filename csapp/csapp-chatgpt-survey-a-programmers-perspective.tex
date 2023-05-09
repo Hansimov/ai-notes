@@ -39,10 +39,12 @@
     skin=bicolor,
     colframe=black,
     colbacklower=green!10,
+    fontupper=\small,
+    fontlower=\footnotesize,
     middle=0pt, % Remove space of \tcblower
     subtitle style = {
       boxrule=0.4pt,
-      colback=gray
+      colback=gray,
     }
   ]
     #2
@@ -159,14 +161,13 @@
 
 
 \begin{frame}{Prompt Techniques 1: More is Better}
-\begin{tcolorbox}[title=Improve the basic case,
-  subtitle style={} ]
-  Let's add some info.
-  \tcbsubtitle{You}
-  Provide a Python Scraper script.
-  \tcbsubtitle{Bing AI}
-  % Here is a basic Python script that can be used as a starting point for writing a web scraper:
-  % \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black}
+  \askanswer{Little change makes huge effects}
+  {Add programming language; Use Scraper that AI understood.}
+  {Provide a Python Scraper script.}
+  {Bing AI}
+  {Here is a basic Python script that can be used as a starting point for writing a web scraper:
+  
+  ... {\color{green!50!black} (\# Python codes Here)}
   %     import requests
   %     from bs4 import BeautifulSoup
       
@@ -180,11 +181,11 @@
   %     # Process the data as needed
   %     for item in data:
   %         print(item.text)
-  % \end{tcblisting}
-    % This script uses the `requests` and `BeautifulSoup` libraries to fetch and parse the HTML of a web page. You can then use the methods provided by `BeautifulSoup` to find and extract the data you want from the page.
-    
-    % Keep in mind that this is just a basic example and you may need to modify it to fit your specific needs. Additionally, make sure to follow any terms of service or usage policies for the website you are scraping.
-\end{tcolorbox}
+
+  This script uses the `requests` and `BeautifulSoup` libraries to fetch and parse the HTML of a web page. You can then use the methods provided by `BeautifulSoup` to find and extract the data you want from the page.
+  
+  Keep in mind that this is just a basic example and you may need to modify it to fit your specific needs. Additionally, make sure to follow any terms of service or usage policies for the website you are scraping.}
+
 \end{frame}
 %   % Use delimiters
 %   % Ask for structured output
