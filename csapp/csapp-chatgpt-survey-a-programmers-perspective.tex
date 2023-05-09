@@ -2,19 +2,22 @@
 
 \usetheme{Madrid}
 \usecolortheme{whale}
+
 \usepackage{xcolor}
 \usepackage{etoolbox}
 \usepackage{ifthen}
+
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,xparse}
 % \tcbuselibrary{listings}
 % \tcbuselibrary{minted}
 % \tcbset{listing engine=minted}
-\usepackage{xcolor}
 
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{listings}
+
+% Bib configs
 \usepackage[backend=biber, sorting=none]{biblatex}
 \addbibresource{refs.bib}
 \DeclareFieldFormat*{title}{#1}
@@ -24,10 +27,33 @@
 \renewcommand*{\bibfont}{\tiny}
 \usepackage{ragged2e}
 
+% cmd: urls in .bib
 \newcommand{\biburl}[2][]{%
 \newline - \ifstrempty{#1}{}{\textcolor{cyan}{#1: }}\url{#2}\nopunct
 }
-  
+
+% cmd: Ask and answer tcolorbox
+\newcommand{\askanswer}[5]{ % title, note, [You], Ask,Bing AI, Answer
+  \begin{tcolorbox}[
+    title=#1,
+    skin=bicolor,
+    colframe=black,
+    colbacklower=green!10,
+    middle=0pt, % Remove space of \tcblower
+    subtitle style = {
+      boxrule=0.4pt,
+      colback=gray
+    }
+  ]
+    #2
+    \tcbsubtitle{You}
+    {\color{blue} #3}
+    \tcblower
+    \tcbsubtitle{#4}
+    #5
+  \end{tcolorbox}
+}
+
 \usepackage{datetime}
 \yyyymmdddate % 2023/05/08
 
@@ -36,17 +62,15 @@
 \institute{Intel FLEX}
 \date{\today}
 
+% cmd: Lesson template with: section, title, toc
 \newcounter{lesson_cnt}
 \newcommand{\lesson}[1]{
   \stepcounter{lesson_cnt}
   \section{Lesson \arabic{lesson_cnt}: #1}
   \subtitle{Lesson \arabic{lesson_cnt}: #1}
-
-
   \begin{frame}
     \titlepage
   \end{frame}
-
   \begin{frame}{Outline of Lesson \arabic{lesson_cnt}}
     % \tableofcontents[currentsection,hideothersubsections]
     \tableofcontents[sections={\arabic{lesson_cnt}}]
@@ -66,7 +90,6 @@
 % Lesson 1
 \date{2023/05/09}
 \lesson{Prompt Engineering: Principles, Techniques, and Tools}
-
 
 \subsection{SPQA Architecture}
 \begin{frame}{SPQA Architecture}
@@ -98,8 +121,6 @@
   \end{minipage}
 \end{frame}
 
-
-
 \subsection{Prompt Principles}
 \begin{frame}{Prompt Principles}
 % More details and examples
@@ -124,26 +145,7 @@
   % Search Engine is still powerful
 \end{frame}
 
-\newcommand{\askanswer}[5]{ % title, note, [You], Ask,Bing AI, Answer
-  \begin{tcolorbox}[
-    title=#1,
-    skin=bicolor,
-    colframe=black,
-    colbacklower=green!10,
-    middle=0pt, % Remove space of \tcblower
-    subtitle style = {
-      boxrule=0.4pt,
-      colback=gray
-    }
-  ]
-    #2
-    \tcbsubtitle{You}
-    {\color{blue} #3}
-    \tcblower
-    \tcbsubtitle{#4}
-    #5
-  \end{tcolorbox}
-}
+
 
 
 \subsection{Prompt Techniques}
