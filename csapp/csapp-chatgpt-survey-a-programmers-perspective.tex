@@ -4,11 +4,13 @@
 \usecolortheme{whale}
 \usepackage{xcolor}
 \usepackage{etoolbox}
-
+\usepackage{ifthen}
 \usepackage{tcolorbox}
+\tcbuselibrary{skins,xparse}
 % \tcbuselibrary{listings}
 % \tcbuselibrary{minted}
 % \tcbset{listing engine=minted}
+\usepackage{xcolor}
 
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -122,16 +124,35 @@
   % Search Engine is still powerful
 \end{frame}
 
+\newcommand{\askanswer}[5]{ % title, note, [You], Ask,Bing AI, Answer
+  \begin{tcolorbox}[
+    title=#1,
+    skin=bicolor,
+    colframe=black,
+    colbacklower=green!10,
+    middle=0pt, % Remove space of \tcblower
+    subtitle style = {
+      boxrule=0.4pt,
+      colback=gray
+    }
+  ]
+    #2
+    \tcbsubtitle{You}
+    {\color{blue} #3}
+    \tcblower
+    \tcbsubtitle{#4}
+    #5
+  \end{tcolorbox}
+}
+
+
 \subsection{Prompt Techniques}
 \begin{frame}{Prompt Techniques 1: More is Better}
-  \begin{tcolorbox}[title=A basic case,
-    subtitle style={} ]
-    Here is where we start.
-    \tcbsubtitle{You}
-    Write a Scrawler for me.
-    \tcbsubtitle{Bing AI}
-    I’m sorry, but I’m not able to write a web scraper for you. However, I can provide you with information on how to write one yourself or where to find resources to learn how to do so. Would you like me to help you with that?
-  \end{tcolorbox}
+  \askanswer{A Hello World Case}
+  {Here is where we start.}
+  {Write a Scrawler for me.}
+  {Bing AI}
+  {I’m sorry, but I’m not able to write a web scraper for you. However, I can provide you with information on how to write one yourself or where to find resources to learn how to do so. Would you like me to help you with that?}
 \end{frame}
 
 
